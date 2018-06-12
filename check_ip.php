@@ -2,8 +2,8 @@
 
 $ip_blacklist = [
 	'124.12.333.09',
-  '124.12.333.09',
-  '124.12.333.09',
+	'124.13.333.09',
+	'124.14.333.09',
 	];
 // write here the ips you want to ban
 
@@ -23,5 +23,7 @@ function isIpBlack($blacklist) {
 }
 
 if (isIpBlack($blacklist)) {
-  die('your ip is banned.');
+	die('your ip is banned.');
+} else {
+	echo 'welcome to my website, you good friend!';
 }
